@@ -30,7 +30,7 @@
 //17.write a program to take two number form the user and determine the greater of those two given number.
 
 // let num1 = 20;
-// let num2 = 30;
+// let num2 = 10;
 // let greater;
 
 // if(num1 > num2){
@@ -516,15 +516,176 @@
 // console.log("sum of elements: " + sum);
 
 
-let str="ThIS Is My WoRLd"
-const length = str.length-1;
-let newstar = "";
-for(let i = length; i>=0; i--){
-    if (str[i] === str[i].toUpperCase()){
-        newstar +=str[i].toLowerCase();
-    }else{
-        newstar += str[i].toUpperCase();
-    }
+// let str="ThIS Is My WoRLd"
+// const length = str.length-1;
+// let newstar = "";
+// for(let i = length; i>=0; i--){
+//     if (str[i] === str[i].toUpperCase()){
+//         newstar +=str[i].toLowerCase();
+//     }else{
+//         newstar += str[i].toUpperCase();
+//     }
    
     
-}console.log(newstar)
+// }console.log(newstar)
+
+
+// let N = 10;
+// for(let i = 1; i <= N; i++){
+//     if(i % 2 === 0){
+//         console.log(i);
+//     }
+// }
+
+
+
+
+
+// let a = 0;
+// if(a > 0){
+//     console.log("positive");
+// }else if(a < 0){
+//     console.log("Nagative")
+// }else{
+//     console.log("Zero");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let readline = require("readline-sync");
+// let n = Number(readline.question("Enter the length of array: "));
+// let input = readline.question("Enter the array elements: ");
+
+// let arr = input.split(" ");  
+
+// let count = 0;
+// let i = 0;
+
+// while (i < n) {
+//   if (i % 2 === 0 && Number(arr[i]) % 2 === 0) {
+//     count = count + 1;
+//   }
+//   i = i + 1;
+// }
+
+// console.log(count);
+
+
+
+
+
+
+// const rs = require("readline-sync");
+// let n = parseInt(rs.question("Enter size: "));
+
+// let count = 0;
+
+// let i = 0;
+// while (i < n) {
+//     let num = parseInt(rs.question("Enter number: "));
+//     if (num % 2 === 0) count++;
+//     i++;
+// }
+
+// console.log(count);
+
+
+
+// const name = require("readline-sync");
+
+// let n = name.question("Enter array length: ");
+// let arr = name.question("Enter elements: ").split(" ");
+
+// let count = 0;
+// let i = 0;
+
+// while (i < n) {
+//   if (i % 2 === 0 && arr[i] % 2 === 0) {
+//     count++;
+//   }
+//   i++;
+// }
+
+// console.log(count);
+
+
+
+//3. write a program to take an array and an integer x as input and output the index of the last occurrence of an element greater than x in the array. If no such element exists, output -1.
+
+// const name = require("readline-sync");
+// let n = parseInt(name.question("Enter array length: "));
+// let arr = name.question("Enter elements: ").split(" ").map(Number);
+// let x = parseInt(name.question("Enter x: "));
+
+// let answer = -1;
+// while (n > 0) {
+//     if (arr[n - 1] > x) {
+//         answer = n - 1;
+//     }
+//     n = n - 1;
+// }
+
+// if (answer !== -1) {
+//     console.log(answer);
+// } else {
+//     console.log(-1);
+// } 
+
+
+// let i = 0;
+// let answer = -1;
+
+// while (i < n) {
+//     if (arr[i] > x) {
+//         answer = i;
+//         break;
+//     }
+//     i = i + 1;
+// }
+
+// console.log(answer);
+
+
+
+//1.  Write a program to check whether a given string is palindrome or not using function.
+
+// function isPalindrome(str) {
+//   let reversed = str.split('').reverse().join('');
+//   if(str === reversed) {
+//     return 1;
+//   }else{
+//     return 0;
+//   }
+// }
+// console.log(isPalindrome("adda"));
+
+
+
+
+
+
+//2. Write a program to reverse a string using function.
+// function reverseString(str) {
+//     let revstr = "";
+//     for(let i = str.length -1; i >= 0; i--){
+//         revstr += str[i];
+
+//     }
+//     return revstr;
+// }
+// console.log(reverseString("hello world"));
+

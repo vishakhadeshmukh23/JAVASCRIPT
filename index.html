@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IndexedDB Example</title>
+</head>
+<body>
+  <h1>Check Console for Output</h1>
+  
+   <script>
+   window.onload = function() {
+  let request = indexedDB.open("SchoolDB", 1);
+
+  request.onupgradeneeded = function(event) {
+    let db = event.target.result;
+    db.createObjectStore("students", { keyPath: "id" });
+  };
+
+  request.onsuccess = function(event) {
+    let db = event.target.result;
+    let transaction = db.transaction("students", "readwrite");
+    let store = transaction.objectStore("students");
+    store.add({ id: 1, name: "Vishakha", marks: 95 });
+    console.log("Data added successfully!");
+  };
+
+  request.onerror = function(event) {
+    console.log("Error: ", event.target.error);
+  };
+};
+</script>
+
+</body>
+</html>

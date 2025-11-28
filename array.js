@@ -13,6 +13,7 @@
 
 
 // BINA METHOD KE REVERSED.
+
 // function reverseArray(arr){
 //   let left = 0, right = arr.length -1;
 //   while(left < right){
@@ -350,15 +351,46 @@
 // console.log(outputArray1);
 
 
-function lengthOfLastWord(s) {
-  let trimmed = s.trim();
-  let words = trimmed.split(" ");
-  return words[words.length - 1].length;
-}
+// function lengthOfLastWord(s) {
+//   let trimmed = s.trim();
+//   let words = trimmed.split(" ");
+//   return words[words.length - 1].length;
+// }
 
 
-console.log(lengthOfLastWord("Hello World"));               
+// console.log(lengthOfLastWord("Hello World"));               
 
 
 
+//! 1. Write a code to reverse a number
+// function reversedArry(num){
+//   let revers = 0;
+
+//   for(let i = num; i > 0; i = Math.floor(i / 10)){
+//     let digit = i % 10;
+//     revers = revers * 10 + digit;
+//   }
+//   return revers;
+// }
+// console.log(reversedArry(25789));
+
+
+//! 2. Write the code to find the Fibonacci series upto the nth term.
+
+
+
+
+// let number = [1, 4, 5, 7, 3];
+// let result = number.map(function(num){
+//   return num * 2;
+// });
+
+// console.log(result);
+
+
+
+// let n = 50;
+// for(let i = 1; n >= i*i; i++){
+//   console.log(i * i);
+// }
 
